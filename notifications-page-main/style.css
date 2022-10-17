@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: hsl(210, 60%, 98%);
+}
+.app {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.notification {
+  max-width: 720px;
+  background-color: hsl(0, 0%, 100%);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+.notification-head {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
+.notification-head-left {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.notification-head-left > span {
+  background-color: hsl(219, 85%, 26%);
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  padding: 3px 12px;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.notification-head-right {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
+.notification-1,
+.notification-2,
+.notification-3,
+.notification-3-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background: hsl(210, 60%, 98%);
+  padding: 13px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  height: 100%;
+  transition-property: background;
+  transition-duration: 1000ms;
+  transition-delay: 200ms;
+}
+.notification-text {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+.notification-text-upper {
+  width: 100%;
+  line-height: 1.5rem;
+}
+.notification-content {
+  display: flex;
+  align-items: center;
+}
+.notification-text-upper > * {
+  margin: 0px 5px;
+}
+.notification-text-name {
+  font-weight: 800;
+  margin-left: 0px;
+  cursor: pointer;
+}
+.notification-text-action {
+  color: hsl(219, 12%, 42%);
+}
+.notification-text-group {
+  color: hsl(219, 85%, 26%);
+  font-weight: 800;
+  cursor: pointer;
+}
+.notification-text-post {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+}
+.notification-text-time {
+  margin-top: 3px;
+  font-size: 0.9rem;
+  color: hsl(219, 14%, 63%);
+}
+.notification-image {
+  height: 100%;
+  cursor: pointer;
+}
+.post-image {
+  cursor: pointer;
+}
+.alert {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: hsl(1, 90%, 64%);
+}
+.avatar-uni {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.post-uni {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+}
+.notification-2,
+.notification-3-content {
+  background: none;
+}
+.notification-3 {
+  background: none;
+  justify-content: space-between;
+}
+.notification-3-content {
+  padding: 0px;
+}
+.notification-message {
+  padding: 20px;
+  background-color: hsl(211, 68%, 94%);
+  border-radius: 5px;
+  margin: 10px 0px;
+  color: hsl(219, 12%, 42%);
+  cursor: pointer;
+}
+@media screen and (max-width: 375px) {
+  .notification-message {
+    border: 1px solid hsl(211, 68%, 94%);
+    background: none;
+  }
+  .notification-head-left {
+    font-size: 1.2rem;
+  }
+  .notification-1,
+  .notification-2,
+  .notification-3,
+  .notification-3-content {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+  .notification-3-content {
+    padding: 0;
+  }
+  .notification-text-upper > * {
+    margin: 0px 2px;
+  }
+  .notification-head-left > span {
+    font-size: 0.9rem;
+    padding: 3px 8px;
+    margin-left: 6px;
+  }
+  .notification-head-right {
+    font-size: 0.9rem;
+  }
+  .notification {
+    padding: 3px 10px;
+  }
+  .notification-text {
+    margin-left: 10px;
+  }
+  .alert {
+    display: none;
+  }
+}

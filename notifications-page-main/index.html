@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="notification">
+        <header class="notification-head">
+          <div class="notification-head-left">Notifications <span id="numberOfNotification">3</span></div>
+          <div class="notification-head-right" id="markAllAction">Mark all as read</div>
+        </header>
+        <div class="notification-1" id="notification">
+          <div class="notification-image">
+            <img
+              class="avatar-uni"
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="fetched-image-from-API"
+            />
+          </div>
+          <div class="notification-text">
+            <div class="notification-content">
+              <p class="notification-text-upper">
+                <span class="notification-text-name">Mark Webber</span>
+                <span class="notification-text-action"
+                  >reacted to your recent post</span
+                >
+                <span class="notification-text-group"
+                  >My first tournament today!</spans
+                >
+              </p>
+              <span class="alert"> </span>
+              
+            </div>
+            <p class="notification-text-time">1m ago</p>
+          </div>
+        </div>
+        <div class="notification-1" id="notification">
+          <div class="notification-image">
+            <img
+              class="avatar-uni"
+              src="https://xsgames.co/randomusers/avatar.php?g=female"
+              alt="fetched-image-from-API"
+            />
+          </div>
+          <div class="notification-text">
+            <div class="notification-content">
+              <p class="notification-text-upper">
+                <span class="notification-text-name">Angela Gray</span>
+                <span class="notification-text-action"
+                  >followed you</span
+                >
+              </p>
+              <span class="alert"> </span>
+              
+            </div>
+            <p class="notification-text-time">5m ago</p>
+          </div>
+        </div>
+        <div class="notification-1" id="notification">
+          <div class="notification-image">
+            <img
+              class="avatar-uni"
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="fetched-image-from-API"
+            />
+          </div>
+          <div class="notification-text">
+            <div class="notification-content">
+              <p class="notification-text-upper">
+                <span class="notification-text-name">Jacob Thompson</span>
+                <span class="notification-text-action"
+                  >has joined your group</span
+                >
+                <span class="notification-text-group"
+                  >Chess Club</spans
+                >
+              </p>
+              <span class="alert"> </span>
+              
+            </div>
+            <p class="notification-text-time">1 day ago</p>
+          </div>
+        </div>
+        <div class="notification-2">
+          <div class="notification-image">
+            <img
+              class="avatar-uni"
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="fetched-image-from-API"
+            />
+          </div>
+          <div class="notification-text">
+            <div class="notification-content">
+              <p class="notification-text-upper">
+                <span class="notification-text-name">Rizky Hasanuddin</span>
+                <span class="notification-text-action"
+                  >sent you a private message</span
+                >
+              </p>
+            </div>
+            <p class="notification-text-time">5 days ago</p>
+            <div class="notification-message">
+              Hello, thanks for setting up the Chess Club. I've been a member for
+              a few weeks now and I'm already having lots of fun and improving my
+              game.
+            </div>
+          </div>
+        </div>
+        <div class="notification-3">
+          <div class="notification-3-content">
+            <div class="notification-image">
+              <img
+                class="avatar-uni"
+                src="https://xsgames.co/randomusers/avatar.php?g=female"
+                alt="fetched-image-from-API"
+              />
+            </div>
+            <div class="notification-text">
+              <div class="notification-content">
+                <p class="notification-text-upper">
+                  <span class="notification-text-name">Kimberly Smith</span>
+                  <span class="notification-text-action"
+                    >commented on your picture</span
+                  >
+                </p>
+              </div>
+              <p class="notification-text-time">1 week ago</p>
+            </div>
+          </div>
+          
+          <div class="post-image">
+            <img class="post-uni" src="https://source.unsplash.com/random" alt="fetched-image-from-API-(unsplash)">
+          </div>
+        </div>
+        <div class="notification-2">
+          <div class="notification-image">
+            <img
+              class="avatar-uni"
+              src="https://xsgames.co/randomusers/avatar.php?g=male"
+              alt="fetched-image-from-API"
+            />
+          </div>
+          <div class="notification-text">
+            <div class="notification-content">
+              <p class="notification-text-upper">
+                <span class="notification-text-name">Nathan
+                  Peterson</span>
+                <span class="notification-text-action"
+                  >reacted to your recent post</span
+                >
+                <span class="notification-text-post"
+                  >5 end-game strategies to increase
+                  your win rate</span
+                >
+              </p>
+            </div>
+            <p class="notification-text-time">2 weeks ago</p>
+          </div>
+        </div>
+        <div class="notification-2">
+          <div class="notification-image">
+            <img
+              class="avatar-uni"
+              src="https://xsgames.co/randomusers/avatar.php?g=female"
+              alt="fetched-image-from-API"
+            />
+          </div>
+          <div class="notification-text">
+            <div class="notification-content">
+              <div class="notification-text-upper">
+                <span class="notification-text-name">Anna Kim </span>
+                <span class="notification-text-action"
+                  >left the group</span
+                >
+                <span class="notification-text-post"
+                  > Chess Club </span
+                >
+              </div>
+            </div>
+            <p class="notification-text-time">2 weeks ago</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
